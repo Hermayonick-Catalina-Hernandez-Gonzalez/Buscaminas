@@ -1,0 +1,113 @@
+* {
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: calibri;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: radial-gradient(circle, #C400F0, #15D2D7, #F753FF);
+    background-size: 400% 400%;
+    animation: wave 10s infinite linear;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.titulo {
+    color: #070707;
+    font-weight: bold;
+}
+
+table {
+    background: #441eb6;
+    margin: 20px auto;
+}
+
+td {
+    border: rgba(0, 0, 0, 0.25) 1px solid;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+}
+
+#juego-nuevo,
+td,
+#minas,
+#Info,
+#Ajustes {
+    box-shadow: inset 3px 3px 0 0 rgba(255, 255, 255, 0.5),
+        inset -3px -3px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+#juego-nuevo,
+#minas,
+#Info,
+#Ajustes {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+#juego-nuevo {
+    background: #ffffff;
+}
+
+#juego-nuevo:hover {
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+    transform: scale(2.05);
+}
+
+#juego-nuevo:active {
+    transform: scale(0.95);
+}
+
+#minas,
+#Ajustes,
+#Info {
+    background: #ffffff;
+}
+
+#minas {
+    color: red;
+    border-radius: 20%;
+}
+
+#Ajustes {
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+#Ajustes:hover {
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+}
+
+
+#Info {
+    cursor: pointer;
+}
+
+#Info:hover {
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+}
+
+.swal2-title {
+    color: #fc0000;
+    font-weight: bold;
+}
+
+.swal2-content {
+    color: #000000;
+    font-weight: normal;
+    font-size: 16px;
+}

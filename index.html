@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Buscaminas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.7/dist/sweetalert2.all.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body oncontextmenu="return false">
+        <div class="container">
+            <h1 class="titulo">BUSCAMINAS</h1>
+            <span id="juego-nuevo" onclick="nuevoJuego()">Juego Nuevo</span>
+            <span id="minas">000</span>
+            <span id="Ajustes" onclick="ajustes()"><i class="fas fa-cog"></i></span>
+            <span id="Info" onclick="mostrarInfo()"><i class="fas fa-question-circle"></i></span>
+            <table cellspacing="0" cellpadding="0" id="tablero"></table>
+            <script src="script.js"></script>
+        </div>
+    </body>
+
+</html>
